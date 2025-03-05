@@ -13,7 +13,7 @@ For AQA:
 Steps to run the Automation Suite: 
 1. npm install
 2. sent a first request to localhost:3000/register once the backend server is on.
-3. npm run test:with-reports
+3. npm run test:with-reports | This will run the suite headless mode
 4. An HTML file will be generated after each execution with Screenshots and results
 
    
