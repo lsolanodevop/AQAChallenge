@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "User Registration",
+			"name": "User Registration | THIS REQUEST HAS TO BE SENT FIRST IN ORDER TO THE SYSTEM TO WORK",
 			"request": {
 				"method": "GET",
 				"header": [],

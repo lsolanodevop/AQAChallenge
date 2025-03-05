@@ -1,0 +1,38 @@
+{
+  "name": "aqachallengeautomationsuite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "cypress:run": "cypress run",
+  "cypress:open": "cypress open",
+  "test:with-reports": "cypress run"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsolanodevop/AQAChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsolanodevop/AQAChallenge/issues"
+  },
+  "homepage": "https://github.com/lsolanodevop/AQAChallenge#readme",
+  "description": "",
+  "dependencies": {
+    "cucumber-html-reporter": "^7.2.0",
+    "cypress": "^14.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-split": "^1.24.14"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/features",
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-report.json"
+    }
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}

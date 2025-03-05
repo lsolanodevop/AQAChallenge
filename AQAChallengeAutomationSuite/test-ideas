@@ -1,0 +1,13 @@
+Verify that the user can successfully log in with valid username and password.
+Validate that the password input field masks the input characters appropriately.
+Confirm that the login button redirects the user to the correct dashboard or homepage upon successful login.
+Attempt to log in with an incorrect username and correct password and verify that an appropriate error message is displayed.
+Try logging in with a correct username and incorrect password, ensuring that an error message is shown.
+//ChatRoom
+Verify that the chat room displays the title "Chat Room" correctly.
+Check that the chat messages are visible and correctly formatted in the chat area.
+Ensure that the input field for typing messages is present and accepts text input.
+Validate that clicking the "Send" button sends the message typed in the input field.
+Test that after sending a message, it appears in the chat messages area with the correct username and message content.
+Confirm that clicking the "Logout" button logs the user out and redirects to the appropriate page.
+Attempt to send an empty message and verify that an appropriate error message or alert is displayed.

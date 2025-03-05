@@ -15,8 +15,9 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [ LoginService ],
   styleUrl: './login.component.css',
   template: `
-<div class="login-container">
+<div id="login-container" class="login-container">
   <p-card 
+    id="login-card"
     header="Welcome" 
     [style]="{ 
       width: '400px', 
@@ -24,9 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
       boxShadow: '0 4px 15px rgba(0,0,0,0.1)' 
     }"
   >
-    <div class="flex flex-column gap-4 align-items-center">
-      <div class="w-full">
-        <p-floatLabel>
+    <div id="login-form" class="flex flex-column gap-4 align-items-center">
+      <div id="username-field-container" class="w-full">
+        <p-floatLabel id="username-float-label">
           <input 
             pInputText 
             id="username" 
@@ -34,12 +35,12 @@ import { HttpClientModule } from '@angular/common/http';
             class="w-full"
             required
           />
-          <label for="username">Username</label>
+          <label for="username" id="username-label">Username</label>
         </p-floatLabel>
       </div>
       
-      <div class="w-full">
-        <p-floatLabel>
+      <div id="password-field-container" class="w-full">
+        <p-floatLabel id="password-float-label">
           <input 
             pInputText 
             id="password" 
@@ -48,19 +49,19 @@ import { HttpClientModule } from '@angular/common/http';
             class="w-full"
             required
           />
-          <label for="password">Password</label>
+          <label for="password" id="password-label">Password</label>
         </p-floatLabel>
       </div>
     </div>
 
     <ng-template pTemplate="footer">
-      <div class="flex flex-column gap-2 align-items-center">
+      <div id="login-footer" class="flex flex-column gap-2 align-items-center">
         <p-button 
+          id="login-button"
           label="Login" 
           styleClass="w-full p-button-primary" 
           (click)="login()"
         />
-
       </div>
     </ng-template>
   </p-card>
