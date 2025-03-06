@@ -11,10 +11,13 @@ For AQA:
 4. Should be able to run AQA tests with a single command. -> npm run test:with-reports
 
 Steps to run the Automation Suite: 
-1. npm install
-2. sent a first request to localhost:3000/register once the backend server is on.
-3. npm run test:with-reports | This will run the suite headless mode
-4. An HTML file will be generated after each execution with Screenshots and results
+
+1. Ensure to have both services up before running the commands for the AutomationSuite
+2. cd AQAChallengeAutomationSuite for Cypress Suite | cd AQAChallengeFront for Angular Frontend | cd AQAChallengeBack for node backend
+3. npm install
+4. sent a first request to localhost:3000/register once the backend server is on. (In the backend Readme are the instructions to do it)
+5. npm run test:with-reports | This will run the suite headless mode
+6. An HTML file will be generated after each execution with Screenshots and results
 
    
 User Stories (Frontend): Instructions for FrontEnd: https://github.com/lsolanodevop/AQAChallenge/blob/main/AQAChallengeFront/README.md
